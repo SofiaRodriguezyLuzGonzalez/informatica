@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Funciones en Javascript</h1>
+    <h3>Parametros y Argumentos</h3>´
+    <button onclick="solicitarDatos()">Ejemplo</button>
+    <button onclick="saludar()">Saludo</button>
+    <script>
+        function saludar (){
+           let nombre= prompt=("Emma");
+           if (nombre){
+            alert("Hola,"+ nombre);
+           }else{
+            alert("Debes escribir tu nombre");
+           }
+        }
+        function calcularPrecio(precio, cantidad){ //precio y cantidad = parametros
+            let total = precio*cantidad;
+            alert("El precio total es:" + total);
+
+        }
+        function solicitarDatos(){
+            let solicitarPrecio = prompt("Precio");
+            let solicitarCant = prompt("cantidad");
+                calcularPrecio(solicitarPrecio, solicitarCant); //solicitarPrecio y solicitarCant = argumentos
+            
+            }
+    </script>
+</body>
+</html>
